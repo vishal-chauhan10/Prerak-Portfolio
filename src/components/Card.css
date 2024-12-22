@@ -1,0 +1,36 @@
+.card-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 64px;
+}
+
+.card-image {
+  width: 398px;
+  height: 418px;
+  border-radius: 16px;
+}
+
+.card-tags-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.card-tag {
+  border: 2px solid;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+
+@media (max-width: 480px) {
+    .card-image{
+        width: 280px;
+        height: 280px;
+    }
+    .card-tags{
+        width: 72px;
+        height: 33px;
+    }
+}

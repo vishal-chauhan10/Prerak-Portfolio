@@ -1,0 +1,170 @@
+body {
+  background-color: #0A0119;
+  color: white;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  color: white;
+}
+
+.home-header {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.home-intro {
+  max-width: 600px;
+}
+
+.home-name {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.home-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.home-title span {
+  color: #ff6b6b;
+}
+
+.home-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 30px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: white;
+  color: #120f1d;
+}
+
+.image1 {
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 4rem 0 2rem;
+  text-align: center;
+}
+
+.about-section {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.profile-image {
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+.about-description {
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+.projects-section {
+  margin: 6rem 0;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.contact-section {
+  text-align: center;
+  margin: 6rem 0;
+}
+
+.contact-question {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin-bottom: 1rem;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.contact-email {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .home-header {
+    min-height: auto;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 4rem 0;
+  }
+
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image1 {
+    display: none;
+  }
+
+  .profile-image {
+    max-width: 100%;
+  }
+
+  /* Center align projects */
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .projects-container > * {
+    max-width: 400px; /* Limit width of project cards */
+    width: 100%;
+  }
+
+  .contact-email {
+    font-size: 1.5rem; /* Adjusted font size for mobile */
+  }
+}
